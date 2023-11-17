@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hosted JSON Data</title>
+</head>
+<body>
+  <h1>Hosted JSON Data</h1>
+  <script>
+    document.addEventListener("DOMContentLoaded", async function() {
+      const response = await fetch('data.json');
+      const jsonData = await response.json();
+
+      // Process and display jsonData as needed
+      console.log(jsonData);
+    });
+  </script>
+</body>
+</html>
+
